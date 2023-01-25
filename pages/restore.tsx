@@ -58,7 +58,7 @@ const Home: NextPage = () => {
     console.log("===============generatePhoto is called the image Url is:"+ fileUrl);
     await new Promise((resolve) => setTimeout(resolve, 500));
     setLoading(true);
-    const res = await fetch("/api/generate", {
+    const res = await fetch("/ai-photo-enhancer/api/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
