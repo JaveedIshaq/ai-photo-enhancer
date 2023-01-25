@@ -78,30 +78,17 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Restore Photos</title>
+        <title>AI Photo Enhancer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
-        <a
-          href="https://nutlope.substack.com"
-          target="_blank"
-          rel="noreferrer"
-          className="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out"
-        >
-          Want to support this project? Subscribe to{" "}
-          <span className="font-semibold">my newsletter</span>.
-        </a>
+       
         <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Restore any face photo
+          Enhance any photo
         </h1>
-        <p className="text-slate-500">
-          {" "}
-          {/* Obtained this number from Vercel: based on how many serverless invocations happened. Can automate later */}
-          <CountUp start={30000} end={85092} duration={2} separator="," />{" "}
-          photos generated and counting.
-        </p>
+    
         <ResizablePanel>
           <AnimatePresence exitBeforeEnter>
             <motion.div className="flex justify-between items-center w-full flex-col mt-4">
@@ -203,7 +190,6 @@ const Home: NextPage = () => {
           </AnimatePresence>
         </ResizablePanel>
       </main>
-      <Footer />
     </div>
   );
 };
